@@ -239,4 +239,39 @@ body {
 .cardBox .card:hover .iconBox{
     color:var(--whight)
 }
-
+/* details start  */
+.details{
+    position: relative;
+    width: 100%;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 30px;
+    /* margin-top: 10px; */
+}
+.details .recentOrder{
+    position: relative;
+    display: grid;
+    min-height: 500px;
+    border-radius: 20px;
+    padding: 20px;
+    background-color: var(--whight);
+    box-shadow: 0 7px 25px rgba(0,0,0,0.08);
+}
+.cardHader{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.cardHader h2{
+    font-weight: 600;
+    color: var(--blue);
+}
+.btn{
+    position: relative;
+    padding: 5px 10px;
+    background-color: var(--blue);
+    text-decoration: none;
+    border-radius: 6px;
+    color: var(--whight);
+}
