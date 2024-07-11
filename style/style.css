@@ -239,6 +239,25 @@ body {
 .cardBox .card:hover .iconBox{
     color:var(--whight)
 }
+/* charts start */
+.graphBox{
+    position: relative;
+    width: 100%;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 30px;
+    min-height: 200px;
+}
+.graphBox .box{
+     position: relative;
+     background-color: var(--whight);
+     width: 100%;   
+     padding: 20px;
+     border-radius: 20px;
+     box-shadow: 0 7px 25px rgba(0,0,0,0.08);
+}
+
 /* details start  */
 .details{
     position: relative;
@@ -385,6 +404,10 @@ body {
 
 /* now make it reponsive  */
 @media (max-width:991px) {
+    .graphBox{
+        grid-template-columns:1fr;
+        height: auto;
+    }
     .nav{
         left: -300px;
     }
@@ -416,7 +439,7 @@ body {
 }
 @media (max-width:480px) {
     .cardBox{
-        grid-template-columns: repeat(1,1f);
+        grid-template-columns: repeat(1,1fr);
     }
     .cardHader h2{
         font-size: 20px;
@@ -441,5 +464,14 @@ body {
         right: 0;
         left: initial;
         color: var(--whight);
+    }
+    .status.inprogress{
+        white-space:none;
+    }
+
+    .graphBox{
+        grid-template-columns:1fr;
+        height: auto;
+        width: 100%;
     }
 }
